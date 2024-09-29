@@ -21,7 +21,7 @@ async function bootstrap() {
 
     app.enableCors({
         origin: corsOrigins.split(',').map((origin) => origin.trim()),
-        methods: 'POST',
+        methods: 'POST, OPTIONS',
         allowedHeaders: 'Content-Type, Authorization',
     });
     app.useGlobalFilters(new AllExceptionsFilter());
