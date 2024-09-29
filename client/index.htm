@@ -7121,9 +7121,7 @@
                 const fio = document.getElementById('fio').value;
                 const telephone = document.getElementById('telephone').value;
 
-                console.log(fio, telephone);
-
-                const response = await fetch('http://localhost:8000/form/submit', {
+                const response = await fetch('http://31.129.51.155/form/submit', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
