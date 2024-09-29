@@ -19,6 +19,7 @@ async function bootstrap() {
         process.exit(1);
     }
 
+	app.setGlobalPrefix('api');
     app.enableCors({
         origin: corsOrigins.split(',').map((origin) => origin.trim()),
         methods: 'POST, OPTIONS',
